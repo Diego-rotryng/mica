@@ -1,21 +1,12 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mica Week Premium Visual + Única Cartelera · Vacaciones en CABA</title>
-<!-- Versión visual: vistas de fuentes + fallback ilustrativo + galería ampliada -->
-<meta name="description" content="El planificador premium de actividades infantiles en CABA para Mica, 6 años.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-<style>
+<!doctype html><!-- Mica Week --><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Mica Week · Planes para chicos en Buenos Aires</title><!-- Versión visual: vistas de fuentes + fallback ilustrativo + galería ampliada --><meta name="description" content="El planificador premium de actividades infantiles en CABA para Mica, 6 años."><meta name="theme-color" content="#080b16"><link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBzdG9wLWNvbG9yPSIjZmY0ZjlhIi8+PHN0b3Agb2Zmc2V0PSIuNTIiIHN0b3AtY29sb3I9IiM4YjVjZjYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzM2Q2ZmYiLz4KPC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE3IiBmaWxsPSJ1cmwoI2cpIi8+CjxyZWN0IHg9IjciIHk9IjciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgcng9IjE0IiBmaWxsPSIjMDgwYjE2IiBzdHJva2U9IndoaXRlIiBzdHJva2Utb3BhY2l0eT0iLjgiLz4KPHRleHQgeD0iMzIiIHk9IjQzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzNCIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0id2hpdGUiPk08L3RleHQ+Cjx0ZXh0IHg9IjQ4IiB5PSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNmZmQxNjYiPuKYhTwvdGV4dD4KPC9zdmc+"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mica Week"><style>
 :root{
 --bg:#05060f;--ink:#f7f8ff;--muted:#a5adc6;--dim:#6f7893;
 --pink:#ff4f9a;--violet:#8b5cf6;--cyan:#33d6ff;--green:#3ee6a8;--yellow:#ffd166;--orange:#ff8a4c;
 --line:rgba(255,255,255,.10);--line2:rgba(255,255,255,.18);
 --glass:rgba(255,255,255,.055);--glass2:rgba(255,255,255,.09);
 --r:22px;--shadow:0 24px 70px rgba(0,0,0,.45);
---sans:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;
---serif:'Fraunces',Georgia,serif;
+--sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+--serif:Georgia,'Times New Roman',serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -161,89 +152,241 @@ footer{border-top:1px solid var(--line);padding:28px 0 60px;color:var(--dim);fon
 @media(max-width:1200px){.grid{grid-template-columns:repeat(3,1fr)}.control-grid{grid-template-columns:repeat(3,1fr)}.stats,.podium,.tips{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:840px){.grid{grid-template-columns:repeat(2,1fr)}.stats,.podium,.tips{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:580px){.grid{grid-template-columns:1fr}.control-grid{grid-template-columns:1fr 1fr}.control-grid .field:first-child{grid-column:1/-1}.stats{grid-template-columns:1fr 1fr}h1{font-size:46px}}
+
+/* ---------- app móvil nativa + fichas premium ---------- */
+
+/* ---------- videos visibles ---------- */
+
+/* ---------- recomendaciones personalizadas ---------- */
+.smart-hub{margin:34px 0 16px;border:1px solid rgba(255,255,255,.13);border-radius:28px;
+background:linear-gradient(135deg,rgba(139,92,246,.19),rgba(51,214,255,.08) 46%,rgba(255,79,154,.13));
+box-shadow:0 28px 90px rgba(0,0,0,.36);overflow:hidden;position:relative}
+.smart-hub:before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-130px;top:-190px;
+background:radial-gradient(circle,rgba(51,214,255,.35),transparent 68%);pointer-events:none}
+.smart-head{padding:22px 22px 16px;display:flex;align-items:flex-start;justify-content:space-between;gap:18px;position:relative;z-index:1}
+.smart-kicker{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:900;color:var(--cyan)}
+.smart-head h2{font-family:var(--serif);font-size:clamp(30px,4.5vw,52px);line-height:.95;letter-spacing:-.04em;margin:7px 0 8px}
+.smart-head p{margin:0;color:var(--muted);max-width:70ch}
+.smart-status{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.smart-pill{padding:8px 11px;border-radius:999px;border:1px solid var(--line2);background:rgba(5,6,15,.48);
+font-size:11px;font-weight:850;white-space:nowrap;backdrop-filter:blur(12px)}
+.smart-pill.good{color:var(--green)}.smart-pill.warn{color:var(--yellow)}
+.smart-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 22px 18px;position:relative;z-index:1}
+.smart-pick{border:1px solid var(--line);border-radius:20px;background:rgba(5,6,15,.48);overflow:hidden;cursor:pointer;
+transition:.22s;min-height:240px;display:flex;flex-direction:column}
+.smart-pick:hover{transform:translateY(-4px);border-color:rgba(51,214,255,.42)}
+.smart-pick-img{height:118px;position:relative;overflow:hidden}.smart-pick-img img{width:100%;height:100%;object-fit:cover;opacity:.8}
+.smart-pick-img:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(5,6,15,.94))}
+.smart-rank{position:absolute;left:10px;top:10px;z-index:2;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+background:linear-gradient(110deg,var(--yellow),var(--pink));color:#17070d;font-weight:950}
+.smart-pick-body{padding:13px;display:flex;flex-direction:column;flex:1}
+.smart-pick h3{font-size:18px}.smart-reason{color:var(--muted);font-size:11.5px;margin:7px 0 10px}
+.smart-scoreline{display:flex;align-items:center;justify-content:space-between;margin-top:auto;font-size:11px}
+.smart-scoreline b{font-family:var(--serif);font-size:25px;color:var(--yellow)}
+.smart-actions{display:flex;gap:9px;flex-wrap:wrap;padding:0 22px 22px;position:relative;z-index:1}
+.smart-action{border:1px solid var(--line2);background:rgba(255,255,255,.06);padding:11px 15px;border-radius:14px;
+font-weight:900;cursor:pointer;transition:.2s}
+.smart-action:hover{background:rgba(255,255,255,.11)}.smart-action.primary{background:linear-gradient(100deg,var(--violet),var(--pink));border:0}
+.smart-action.green{background:linear-gradient(100deg,var(--green),var(--cyan));border:0;color:#04140d}
+.personal-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 8px;border-radius:999px;background:rgba(139,92,246,.15);
+border:1px solid rgba(139,92,246,.25);font-size:9px;font-weight:900;color:#d9ccff;text-transform:uppercase;letter-spacing:.06em}
+.compare-mini{width:100%;margin:9px 0 0;padding:8px 10px;border-radius:10px;border:1px dashed var(--line2);
+background:transparent;color:var(--muted);font-size:11px;font-weight:800;cursor:pointer}
+.compare-mini.on{color:#061710;background:linear-gradient(100deg,var(--green),var(--cyan));border-color:transparent}
+.profile-overlay,.compare-overlay{position:fixed;inset:0;z-index:105;background:rgba(2,3,9,.79);backdrop-filter:blur(17px);
+display:flex;align-items:flex-end;justify-content:center;opacity:0;visibility:hidden;transition:.24s}
+.profile-overlay.open,.compare-overlay.open{opacity:1;visibility:visible}
+.profile-sheet,.compare-sheet{width:min(780px,100%);max-height:94vh;overflow:auto;background:linear-gradient(180deg,#121727,#080b16);
+border:1px solid var(--line2);border-radius:28px 28px 0 0;padding:22px 22px calc(24px + env(safe-area-inset-bottom));
+transform:translateY(35px);transition:.3s cubic-bezier(.2,.8,.3,1)}
+.profile-overlay.open .profile-sheet,.compare-overlay.open .compare-sheet{transform:none}
+.sheet-top{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;margin-bottom:18px}
+.sheet-top h2{font-family:var(--serif);font-size:32px;line-height:1;margin:0 0 5px}.sheet-top p{margin:0;color:var(--muted);font-size:12px}
+.sheet-close{width:42px;height:42px;border-radius:50%;border:1px solid var(--line2);background:rgba(255,255,255,.05);font-size:23px;cursor:pointer}
+.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.profile-field{border:1px solid var(--line);border-radius:15px;padding:11px;background:rgba(255,255,255,.035)}
+.profile-field label{display:block;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:6px}
+.profile-field input,.profile-field select{padding:10px 11px;min-height:43px}
+.profile-field.wide{grid-column:1/-1}.interest-grid{display:flex;gap:7px;flex-wrap:wrap}
+.interest-chip{position:relative}.interest-chip input{position:absolute;opacity:0;pointer-events:none}
+.interest-chip span{display:block;padding:8px 11px;border:1px solid var(--line);border-radius:999px;font-size:11px;font-weight:800;color:var(--muted);cursor:pointer}
+.interest-chip input:checked+span{background:linear-gradient(100deg,var(--violet),var(--cyan));border-color:transparent;color:#06111a}
+.profile-save{width:100%;margin-top:14px;min-height:51px;border:0;border-radius:15px;background:linear-gradient(100deg,var(--green),var(--cyan));
+color:#04140d;font-weight:950;cursor:pointer}
+.compare-float{position:fixed;right:18px;bottom:87px;z-index:83;border:0;border-radius:999px;padding:12px 16px;
+background:linear-gradient(100deg,var(--yellow),var(--orange));color:#1a0d02;font-weight:950;box-shadow:0 16px 38px rgba(255,138,76,.28);
+display:none;cursor:pointer}.compare-float.show{display:block}
+.compare-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.compare-card{border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.04);overflow:hidden}
+.compare-card img{width:100%;height:120px;object-fit:cover}.compare-card-body{padding:12px}.compare-card h3{font-size:18px}
+.compare-row{display:grid;grid-template-columns:110px 1fr;gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:11px}
+.compare-row span:first-child{color:var(--muted)}.compare-empty{padding:34px;text-align:center;color:var(--muted)}
+.week-result{margin-top:14px;border:1px solid rgba(62,230,168,.22);background:rgba(62,230,168,.06);border-radius:17px;padding:13px}
+.week-result b{color:var(--green)}
+.weather-loading{opacity:.7}
+@media(max-width:800px){.smart-grid{grid-template-columns:1fr 1fr}.smart-grid .smart-pick:last-child{display:none}.compare-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){
+ .smart-hub{margin:24px 0 14px;border-radius:24px}.smart-head{padding:18px 15px 13px;display:block}
+ .smart-head h2{font-size:36px}.smart-status{justify-content:flex-start;margin-top:13px}
+ .smart-grid{display:flex;overflow:auto;gap:10px;padding:0 15px 15px;scroll-snap-type:x mandatory;scrollbar-width:none}
+ .smart-pick{flex:0 0 82vw;scroll-snap-align:start;min-height:255px}.smart-grid .smart-pick:last-child{display:flex}
+ .smart-pick-img{height:135px}.smart-actions{padding:0 15px 18px}.smart-action{flex:1 1 45%;font-size:12px}
+ .profile-grid{grid-template-columns:1fr}.profile-field.wide{grid-column:auto}.profile-sheet,.compare-sheet{padding:18px 15px calc(22px + env(safe-area-inset-bottom))}
+ .compare-grid{display:flex;overflow:auto}.compare-card{flex:0 0 82vw}.compare-float{bottom:91px;right:14px}
+}
+
+
+.free-media-head{margin-top:22px}
+.video-mini-scope{display:inline-flex;margin-top:5px;padding:4px 7px;border-radius:999px;background:rgba(255,255,255,.12);
+font:800 9px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:#fff}
+.media-trust{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 2px}
+.media-trust span{padding:5px 8px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);
+font-size:9px;font-weight:850;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.media-trust .real{color:var(--green);border-color:rgba(62,230,168,.25)}
+.photo-kind{max-width:52%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:640px){.free-media-head{margin-top:20px}.video-showcase-head p{max-width:29ch}}
+
+.video-showcase{margin:34px 0 8px}
+.video-showcase-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:13px}
+.video-showcase-head h2{font-family:var(--serif);font-size:clamp(26px,3vw,38px);margin:0;letter-spacing:-.03em}
+.video-showcase-head p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.video-showcase-head button{border:1px solid var(--line2);background:rgba(255,255,255,.06);padding:9px 13px;
+border-radius:999px;font-weight:900;cursor:pointer}
+.video-strip{display:flex;gap:12px;overflow:auto;scroll-snap-type:x mandatory;padding:3px 2px 10px;scrollbar-width:none}
+.video-strip::-webkit-scrollbar{display:none}
+.video-mini{position:relative;flex:0 0 250px;height:155px;border-radius:19px;overflow:hidden;border:1px solid var(--line);
+background:#111522;scroll-snap-align:start;cursor:pointer;box-shadow:0 13px 38px rgba(0,0,0,.35)}
+.video-mini img{width:100%;height:100%;object-fit:cover;opacity:.74}
+.video-mini:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 20%,rgba(5,6,15,.96))}
+.video-mini-info{position:absolute;z-index:2;left:12px;right:12px;bottom:10px}
+.video-mini-info b{display:block;font-family:var(--serif);font-size:17px;line-height:1.05}
+.video-mini-info small{color:#d5dbeb;font-size:10px}
+.video-mini-play{position:absolute;z-index:3;left:12px;top:12px;width:42px;height:42px;border-radius:50%;
+display:grid;place-items:center;background:linear-gradient(100deg,#ff225f,#ff7754);box-shadow:0 10px 25px rgba(255,34,95,.35)}
+.video-cta{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;min-height:49px;margin:10px 0 12px;
+padding:12px 15px;border-radius:14px;background:linear-gradient(100deg,#ff225f,#ff7754);border:0;color:#fff;
+text-decoration:none;font-size:13px;font-weight:900;box-shadow:0 10px 27px rgba(255,34,95,.23)}
+.video-cta small{font-size:10px;opacity:.82;font-weight:700}
+.video-cta .pulse-play{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.2)}
+@media(max-width:640px){
+ .video-showcase{margin:25px -14px 4px;padding-left:14px}
+ .video-showcase-head{padding-right:14px}.video-showcase-head h2{font-size:27px}
+ .video-strip{padding-right:14px}.video-mini{flex-basis:82vw;height:190px}
+ .video-mini-info b{font-size:21px}.video-mini-play{width:48px;height:48px;font-size:18px}
+ .video-cta{min-height:54px;font-size:14px;border-radius:16px}
+}
+
+.mobile-appbar,.mobile-nav,.filter-sheet-head{display:none}
+.video-badge{position:absolute;right:11px;top:48px;z-index:3;display:flex;align-items:center;gap:5px;
+padding:6px 9px;border-radius:999px;background:rgba(255,42,101,.92);border:1px solid rgba(255,255,255,.25);
+font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 9px 25px rgba(255,42,101,.3)}
+.score{display:flex;flex-direction:column;align-items:flex-end;line-height:1}
+.score small{font-family:var(--sans);font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;margin-bottom:4px}
+.btn.video-exact{background:linear-gradient(100deg,#ff225f,#ff7754);border-color:transparent}
+.detail-overlay{position:fixed;inset:0;z-index:92;background:rgba(2,3,9,.76);backdrop-filter:blur(16px);
+opacity:0;visibility:hidden;transition:.25s;display:flex;align-items:flex-end;justify-content:center}
+.detail-overlay.open{opacity:1;visibility:visible}
+.detail-sheet{width:min(760px,100%);max-height:94vh;overflow:auto;background:linear-gradient(180deg,#111525,#080b16);
+border:1px solid var(--line2);border-radius:28px 28px 0 0;box-shadow:0 -25px 100px rgba(0,0,0,.68);
+transform:translateY(35px);transition:.3s cubic-bezier(.2,.8,.3,1);padding-bottom:calc(20px + env(safe-area-inset-bottom))}
+.detail-overlay.open .detail-sheet{transform:none}
+.detail-cover{height:310px;position:relative;overflow:hidden;background:#111522;cursor:zoom-in}
+.detail-cover img{width:100%;height:100%;object-fit:cover}
+.detail-cover:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 38%,rgba(8,11,22,.97))}
+.detail-close{position:absolute;right:14px;top:14px;z-index:5;width:44px;height:44px;border-radius:50%;
+border:1px solid rgba(255,255,255,.2);background:rgba(5,6,15,.78);font-size:25px;cursor:pointer;backdrop-filter:blur(8px)}
+.detail-score{position:absolute;left:17px;bottom:17px;z-index:4;display:flex;align-items:center;gap:10px}
+.detail-score b{font-family:var(--serif);font-size:42px;line-height:.8;color:var(--yellow)}
+.detail-score span{font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:#fff}
+.detail-body{padding:20px}
+.detail-kicker{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:10px;font-weight:900;
+text-transform:uppercase;letter-spacing:.1em;color:var(--cyan)}
+.detail-body h2{font-family:var(--serif);font-size:clamp(30px,7vw,44px);line-height:.97;letter-spacing:-.035em;margin:9px 0 12px}
+.detail-facts{display:flex;gap:7px;overflow:auto;scrollbar-width:none;padding-bottom:2px}
+.detail-facts span{flex:0 0 auto;padding:8px 10px;border-radius:999px;border:1px solid var(--line);
+background:rgba(255,255,255,.05);font-size:11px;font-weight:800}
+.detail-fit{margin:16px 0;padding:14px 15px;border-radius:16px;background:linear-gradient(110deg,rgba(255,79,154,.14),rgba(139,92,246,.12));
+border:1px solid rgba(255,79,154,.22);font-size:14px}
+.score-panel{margin:16px 0;padding:15px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.035)}
+.score-panel h4{margin:0 0 12px;font-size:13px}
+.score-row{display:grid;grid-template-columns:110px 1fr 34px;gap:9px;align-items:center;margin:9px 0;font-size:11px}
+.score-track{height:7px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden}
+.score-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--violet),var(--pink),var(--yellow))}
+.score-row b{text-align:right;color:var(--yellow)}
+.editorial-note{font-size:10.5px;color:var(--dim);margin-top:10px}
+.video-preview{margin:16px 0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#05060f}
+.video-preview iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+.video-link-card{display:flex;align-items:center;gap:13px;padding:16px;text-decoration:none}
+.video-play{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(100deg,#ff225f,#ff7754);font-size:20px}
+.video-link-card b{display:block}.video-link-card small{color:var(--muted)}
+.detail-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:18px}
+.detail-action{min-height:50px;padding:12px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.05);
+text-decoration:none;font-weight:900;display:flex;align-items:center;justify-content:center;gap:7px;cursor:pointer}
+.detail-action.primary{background:linear-gradient(100deg,var(--violet),var(--pink));border:0}
+.detail-action.video{background:linear-gradient(100deg,#ff225f,#ff7754);border:0}
+.install-pill{display:none;align-items:center;gap:6px;border:1px solid var(--line2);background:rgba(255,255,255,.06);
+padding:8px 11px;border-radius:999px;font-weight:800;font-size:11px;cursor:pointer}
+.install-pill.show{display:inline-flex}
+
+@media(max-width:640px){
+ body{padding-bottom:calc(82px + env(safe-area-inset-bottom));font-size:14px}
+ .wrap{width:100%;padding-left:14px;padding-right:14px}
+ .mobile-appbar{display:flex;position:fixed;left:0;right:0;top:0;z-index:80;align-items:center;justify-content:space-between;
+ height:calc(62px + env(safe-area-inset-top));padding:calc(8px + env(safe-area-inset-top)) 14px 8px;
+ background:rgba(5,6,15,.88);border-bottom:1px solid var(--line);backdrop-filter:blur(20px) saturate(150%)}
+ .app-brand{display:flex;align-items:center;gap:10px}.app-logo{width:39px;height:39px;border-radius:13px;display:grid;place-items:center;
+ background:linear-gradient(145deg,var(--pink),var(--violet),var(--cyan));font-family:var(--serif);font-weight:900;font-size:20px;
+ box-shadow:0 8px 25px rgba(139,92,246,.35)}.app-brand b{display:block;font-size:14px}.app-brand small{display:block;color:var(--muted);font-size:10px}
+ .appbar-actions{display:flex;gap:7px}.appbar-btn{width:40px;height:40px;border-radius:13px;border:1px solid var(--line);
+ background:rgba(255,255,255,.05);display:grid;place-items:center;font-size:17px;cursor:pointer}
+ .hero{padding:calc(82px + env(safe-area-inset-top)) 0 15px}.eyebrow{display:none}
+ h1{font-size:46px;line-height:.9;margin:10px 0 13px;max-width:10ch}.sub{font-size:14px;line-height:1.55}
+ .stats{display:flex;overflow:auto;gap:9px;margin-top:20px;padding-bottom:4px;scrollbar-width:none}
+ .stat{min-width:143px;padding:14px;border-radius:17px}.stat b{font-size:28px}
+ .section-h{margin:28px 0 12px}.section-h h2{font-size:28px}.section-h p{font-size:12px}
+ .podium{display:flex;overflow:auto;gap:10px;padding-bottom:5px;scrollbar-width:none}
+ .pod{min-width:225px;padding:17px;border-radius:18px}.pod .n{font-size:42px}
+ .controls{position:fixed;z-index:98;inset:auto 0 0 0;margin:0;padding:0 0 calc(18px + env(safe-area-inset-bottom));
+ max-height:91vh;overflow:auto;border:1px solid var(--line2);border-radius:28px 28px 0 0;background:rgba(9,11,22,.98);
+ transform:translateY(105%);transition:.32s cubic-bezier(.2,.8,.3,1);box-shadow:0 -30px 100px rgba(0,0,0,.7)}
+ .controls.mobile-open{transform:none}
+ .controls .wrap{padding-top:15px}
+ .filter-sheet-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+ .filter-sheet-head b{font-family:var(--serif);font-size:24px}.filter-sheet-head button{width:40px;height:40px;border-radius:50%;
+ border:1px solid var(--line);background:rgba(255,255,255,.05);font-size:22px}
+ .control-grid{grid-template-columns:1fr 1fr;gap:8px}.control-grid .field:first-child{grid-column:1/-1}
+ input,select{font-size:14px;min-height:52px}
+ .days{padding-top:13px}.chips{max-height:105px;overflow:auto}
+ .toolbar{margin:23px 0 13px;align-items:center}.toolbar h2{font-size:29px}.toolbar>div:last-child{display:none}
+ .count{font-size:11.5px;max-width:92%}
+ .grid{grid-template-columns:1fr;gap:14px;padding-bottom:24px}
+ .card{border-radius:25px;box-shadow:0 15px 45px rgba(0,0,0,.38)}
+ .card:hover{transform:none}.image{height:220px}.image img{opacity:.8}
+ .body{padding:16px}.titleline h3{font-size:23px}.score{font-size:15px}
+ .cat{font-size:10px}.meta{display:flex;overflow:auto;grid-template-columns:none;scrollbar-width:none;margin-top:12px}
+ .meta div{min-width:max-content;padding:8px 10px}.why{font-size:14px}.desc{font-size:13px}
+ .actions{grid-template-columns:1fr 45px 45px 45px}.btn{min-height:45px;border-radius:13px}
+ .photo-kind{font-size:8px}.planbtn{display:none}
+ .drawer{inset:8vh 0 0;width:100%;border-left:0;border-top:1px solid var(--line2);border-radius:28px 28px 0 0;
+ padding-bottom:calc(24px + env(safe-area-inset-bottom))}
+ .photo-modal{z-index:110;padding:0;align-items:flex-end}.photo-shell{border-radius:28px 28px 0 0;max-height:94vh}
+ .photo-stage{min-height:280px}.photo-stage img{max-height:66vh}
+ .detail-sheet{max-height:96vh}.detail-cover{height:280px}
+ .mobile-nav{position:fixed;display:grid;grid-template-columns:repeat(4,1fr);left:10px;right:10px;
+ bottom:calc(8px + env(safe-area-inset-bottom));z-index:85;padding:7px;border:1px solid var(--line2);
+ border-radius:22px;background:rgba(10,12,23,.9);backdrop-filter:blur(22px) saturate(160%);
+ box-shadow:0 15px 45px rgba(0,0,0,.55)}
+ .mobile-nav button{border:0;background:transparent;padding:7px 3px;border-radius:15px;color:var(--muted);font-size:10px;
+ font-weight:800;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer}
+ .mobile-nav button .nav-icon{font-size:20px;line-height:1}.mobile-nav button.active{background:rgba(255,255,255,.08);color:#fff}
+ .mobile-nav .nav-count{position:absolute;margin-left:19px;margin-top:-4px;min-width:17px;height:17px;border-radius:9px;
+ display:grid;place-items:center;background:var(--pink);color:#fff;font-size:9px}
+ .tips{grid-template-columns:1fr 1fr}.note{font-size:12px}
+ footer{padding-bottom:110px}
+}
+.hero{padding-top:calc(78px + env(safe-area-inset-top))}
+}
+
 @media print{.controls,.planbtn,.drawer,.actions{display:none}.card{break-inside:avoid}}
-</style></head>
-<body>
-<div class="aurora"><i class="a1"></i><i class="a2"></i><i class="a3"></i></div><div class="grain"></div>
-
-<header class="hero"><div class="wrap">
-<span class="eyebrow"><span class="dot"></span> Mica Week Premium · CABA · Vacaciones de invierno</span>
-<h1><span class="grad">La semana perfecta, elegida con Mica.</span></h1>
-<p class="sub">Teatro, musicales, títeres, museos, talleres de dibujo, cine, música en vivo, paseos, ferias, meriendas y planes de lluvia. Todo curado para <b>una nena de 6 años, tranquila y creativa</b>, con radar de distancia estimado desde <b>Saavedra</b> y un armador de itinerario día por día.</p>
-<div class="stats">
-<div class="stat"><b id="totalStat">0</b><span>propuestas curadas</span></div>
-<div class="stat"><b id="freeStat">0</b><span>gratis o a la gorra</span></div>
-<div class="stat"><b id="theatreStat">0</b><span>teatro, música y shows</span></div>
-<div class="stat"><b id="nearStat">0</b><span>a menos de 8 km</span></div>
-<div class="stat"><b id="rainStat">0</b><span>bajo techo (plan lluvia)</span></div>
-</div>
-</div></header>
-
-<section class="wrap">
-<div class="section-h"><div><h2>El podio de la semana</h2><p>Si tuviera que elegir sólo cinco salidas para Mica, serían estas.</p></div></div>
-<div class="podium" id="podium"></div>
-</section>
-
-<div class="controls"><div class="wrap">
-<div class="control-grid">
-<div class="field"><label>Buscar</label><input id="search" placeholder="dibujo, musical, cerca, gratis, títeres…"></div>
-<div class="field"><label>Precio</label><select id="cost"><option value="all">Gratis y pago</option><option value="free">Solo gratis</option><option value="paid">Solo pago</option></select></div>
-<div class="field"><label>Distancia</label><select id="distance"><option value="all">Toda distancia</option><option>Muy cerca</option><option>Cerca</option><option>Media</option><option>Lejos</option><option>Elegible</option><option>Fuera de CABA</option><option>En casa</option></select></div>
-<div class="field"><label>Categoría</label><select id="category"><option value="all">Toda categoría</option></select></div>
-<div class="field"><label>Puntaje</label><select id="rating"><option value="0">Cualquiera</option><option value="4.8">4,8★ o más</option><option value="4.5">4,5★ o más</option><option value="4">4★ o más</option></select></div>
-<div class="field"><label>Orden</label><select id="sort"><option value="score">Recomendación</option><option value="near">Más cerca primero</option><option value="free">Gratis primero</option><option value="cheap">Más barato primero</option><option value="name">Nombre A–Z</option></select></div>
-</div>
-<div class="days" id="days"></div>
-<div class="chips" id="chips"></div>
-</div></div>
-
-<main class="wrap">
-<div class="toolbar"><div><h2 id="dayTitle"></h2><div class="count" id="count"></div></div>
-<div style="display:flex;gap:8px;flex-wrap:wrap"><button class="ghost on" id="photoBtn">🖼️ Vistas de las fuentes</button><button class="ghost" id="rainBtn">☔ Modo lluvia</button><button class="ghost" id="favoritesBtn">♡ Favoritos</button></div></div>
-<div class="grid" id="grid"></div>
-
-<p class="note"><b>🎭 Nueva capa: Única Cartelera.</b> Se incorporaron espectáculos infantiles de CABA que pueden servir para Mica, con horario específico por día cuando corresponde. El precio aparece como “consultar/descuento” porque se confirma al iniciar la compra; la reserva queda efectiva recién al finalizarla.</p>
-
-<p class="note"><b>Control de calidad.</b> <span style="color:var(--green)">✔ Confirmado</span>: la propuesta y su período figuran en fuente oficial o boletería. <span style="color:var(--yellow)">⚠ Verificar</span>: está activa, pero conviene chequear hora y precio al abrir el enlace. <span style="color:var(--cyan)">★ Clásico</span>: lugar o plan permanente de la Ciudad, con horarios que cambian según la temporada. Precios de referencia: siempre confirmar en la boletería. En modo «Vistas de las fuentes», cada tarjeta intenta mostrar una captura actual de la página oficial o boletería; si no carga, usa una imagen ilustrativa.</p>
-
-<div class="tips">
-<div class="tip"><b>Regla de oro</b><p>Una actividad fuerte por día. Con 6 años, dos salidas grandes seguidas terminan en llanto en el auto.</p></div>
-<div class="tip"><b>Ventana ideal</b><p>Entre las 14 y las 17. Las funciones de 15:00 son el punto dulce: almuerzo tranquilo antes, merienda después.</p></div>
-<div class="tip"><b>Mochila mínima</b><p>Botella, campera liviana, snack, cuaderno y lápices. El cuaderno convierte cualquier espera en un taller de dibujo.</p></div>
-<div class="tip"><b>Ritual de cierre</b><p>Después de cada salida, que dibuje lo que más le gustó. Al final de la semana tienen un libro de las vacaciones.</p></div>
-</div>
-</main>
-
-<button class="planbtn" id="planBtn">🗓️ Mi plan · <span id="planCount">0</span></button>
-<aside class="drawer" id="drawer"><button class="close" id="closeDrawer">×</button>
-<h3>Mi plan de la semana</h3><p style="color:var(--muted);margin:0 0 14px;font-size:13px">Las actividades que fuiste marcando con <b>+</b>, agrupadas por día.</p>
-<div id="planList"></div><div class="total" id="planTotal"></div>
-<button class="ghost" style="margin-top:14px;width:100%" onclick="window.print()">🖨️ Imprimir / guardar en PDF</button>
-</aside>
-
-
-<div class="photo-modal" id="photoModal" aria-hidden="true">
-  <div class="photo-shell">
-    <div class="photo-stage">
-      <button class="photo-close" id="photoClose" aria-label="Cerrar">×</button>
-      <img id="photoLarge" alt="">
-    </div>
-    <div class="photo-info">
-      <div>
-        <h3 id="photoTitle"></h3>
-        <p id="photoCaption"></p>
-      </div>
-      <div class="photo-actions">
-        <a class="btn primary" id="photoSource" target="_blank" rel="noopener">Abrir fuente oficial</a>
-        <a class="btn" id="photoMap" target="_blank" rel="noopener">Ver mapa</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer><div class="wrap">Fuentes: Gobierno de la Ciudad · Linda BA · Complejo Teatral de Buenos Aires · Teatro Colón · Palacio Libertad · Usina del Arte · Plateanet · Alternativa Teatral · Única Cartelera · carteleras de Cinemark, Multiplex y Atlas · Buenos Aires para Chicos · Time Out Buenos Aires · sitios oficiales de cada museo y recomendaciones de familias. Hecho con cariño para Mica.</div></footer>
-
-<script>
+</style></head><body><div class="aurora"><i class="a1"></i><i class="a2"></i><i class="a3"></i></div><div class="grain"></div><div class="mobile-appbar"><div class="app-brand"><div class="app-logo">M</div><div><b>Mica Week</b><small>La agenda infantil de Buenos Aires</small></div></div><div class="appbar-actions"><button class="appbar-btn" id="shareAppBtn" title="Compartir">↗</button></div></div><header class="hero"><div class="wrap"><span class="eyebrow"><span class="dot"></span> Mica Week Premium · CABA · Vacaciones de invierno</span><h1><span class="grad">La semana perfecta, elegida con Mica.</span></h1><p class="sub">Teatro, musicales, títeres, museos, talleres de dibujo, cine, música en vivo, paseos, ferias, meriendas y planes de lluvia. Todo curado para <b>una nena de 6 años, tranquila y creativa</b>, con radar de distancia estimado desde <b>Saavedra</b>, videos reales y un armador de itinerario día por día. Elegí, compará y armá la semana ideal desde el celular.</p><div class="stats"><div class="stat"><b id="totalStat">0</b><span>propuestas curadas</span></div><div class="stat"><b id="freeStat">0</b><span>gratis o a la gorra</span></div><div class="stat"><b id="theatreStat">0</b><span>teatro, música y shows</span></div><div class="stat"><b id="nearStat">0</b><span>a menos de 8 km</span></div><div class="stat"><b id="rainStat">0</b><span>bajo techo (plan lluvia)</span></div><div class="stat"><b id="videoStat">0</b><span>con video real verificado</span></div></div></div></header><section class="wrap"><div class="section-h"><div><h2>El podio de la semana</h2><p>Si tuviera que elegir sólo cinco salidas para Mica, serían estas.</p></div></div><div class="podium" id="podium"></div></section><section class="wrap video-showcase" id="videoSection"><div class="video-showcase-head"><div><h2>▶ Mirá antes de elegir</h2><p>Videos reales, diferenciando obra exacta de recorrido del lugar.</p></div><button id="allVideosBtn">Ver todos</button></div><div class="video-strip" id="videoStrip"></div><div class="video-showcase-head free-media-head"><div><h2>🟢 Gratis y con video</h2><p>Recorridos y actividades gratuitas para saber cómo son antes de salir.</p></div></div><div class="video-strip" id="freeVideoStrip"></div></section><section class="wrap smart-hub" id="smartHub"><div class="smart-head"><div><div class="smart-kicker">✦ Selección personalizada para tu familia</div><h2 id="smartTitle">Lo mejor para Mica ahora</h2><p id="smartSubtitle">Cruza gustos, edad, intensidad, precio, distancia, clima y disponibilidad del día.</p></div><div class="smart-status"><span class="smart-pill" id="profilePill">Perfil Mica</span><span class="smart-pill weather-loading" id="weatherPill">☁ Consultando clima…</span><span class="smart-pill" id="budgetPill">Presupuesto: flexible</span></div></div><div class="smart-grid" id="smartRecommendations"></div><div class="smart-actions"><button class="smart-action primary" id="profileOpenBtn">⚙ Ajustar perfil</button><button class="smart-action green" id="autoWeekBtn">✨ Armar semana ideal</button><button class="smart-action" id="surpriseBtn">🎲 Sorprendeme</button><button class="smart-action" id="sharePlanBtn">↗ Compartir plan</button></div><div class="week-result" id="weekResult" hidden></div></section><div class="controls"><div class="wrap"><div class="filter-sheet-head"><b>Filtrar planes</b><button id="filterClose" aria-label="Cerrar filtros">×</button></div><div class="control-grid"><div class="field"><label>Buscar</label><input id="search" placeholder="dibujo, musical, cerca, gratis, títeres…"></div><div class="field"><label>Precio</label><select id="cost"><option value="all">Gratis y pago</option><option value="free">Solo gratis</option><option value="paid">Solo pago</option></select></div><div class="field"><label>Distancia</label><select id="distance"><option value="all">Toda distancia</option><option>Muy cerca</option><option>Cerca</option><option>Media</option><option>Lejos</option><option>Elegible</option><option>Fuera de CABA</option><option>En casa</option></select></div><div class="field"><label>Categoría</label><select id="category"><option value="all">Toda categoría</option></select></div><div class="field"><label>Puntaje</label><select id="rating"><option value="0">Cualquiera</option><option value="4.8">4,8★ o más</option><option value="4.5">4,5★ o más</option><option value="4">4★ o más</option></select></div><div class="field"><label>Orden</label><select id="sort"><option value="score">Recomendación</option><option value="near">Más cerca primero</option><option value="free">Gratis primero</option><option value="cheap">Más barato primero</option><option value="name">Nombre A–Z</option></select></div></div><div class="days" id="days"></div><div class="chips" id="chips"></div></div></div><main class="wrap"><div class="toolbar"><div><h2 id="dayTitle"></h2><div class="count" id="count"></div></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="ghost on" id="photoBtn">🖼️ Vistas de las fuentes</button><button class="ghost" id="rainBtn">☔ Modo lluvia</button><button class="ghost" id="favoritesBtn">♡ Favoritos</button></div></div><div class="grid" id="grid"></div><p class="note"><b>🎭 Nueva capa: Única Cartelera.</b> Se incorporaron espectáculos infantiles de CABA que pueden servir para Mica, con horario específico por día cuando corresponde. El precio aparece como “consultar/descuento” porque se confirma al iniciar la compra; la reserva queda efectiva recién al finalizarla.</p><p class="note"><b>✦ Recomendaciones personalizadas.</b> Ajustá edad, gustos, presupuesto y distancia para ordenar los planes según tu familia. Tus preferencias quedan guardadas en este dispositivo.</p><p class="note"><b>📷 Fotos y videos verificados.</b> Cada propuesta intenta mostrar una imagen real o una vista de su fuente. Cuando existe un video concreto, la ficha lo indica claramente. Entradas, mapas y videos se abren en sus sitios oficiales.</p><p class="note"><b>▶ Videos reales, sin engaños.</b> El botón se muestra únicamente cuando existe un enlace concreto. La ficha aclara si es el video de la obra o actividad exacta, un trailer, una nota audiovisual o un recorrido del lugar. Los planes gratuitos con video tienen su propia sección.</p><p class="note"><b>Control de calidad.</b><span style="color:var(--green)">✔ Confirmado</span>: la propuesta y su período figuran en fuente oficial o boletería. <span style="color:var(--yellow)">⚠ Verificar</span>: está activa, pero conviene chequear hora y precio al abrir el enlace. <span style="color:var(--cyan)">★ Clásico</span>: lugar o plan permanente de la Ciudad, con horarios que cambian según la temporada. Precios de referencia: siempre confirmar en la boletería. En modo «Vistas de las fuentes», cada tarjeta intenta mostrar una captura actual de la página oficial o boletería; si no carga, usa una imagen ilustrativa. El botón ▶ aparece únicamente cuando existe un video real comprobado de la obra, actividad o lugar. Si no existe, no se muestra.</p><div class="tips"><div class="tip"><b>Regla de oro</b><p>Una actividad fuerte por día. Con 6 años, dos salidas grandes seguidas terminan en llanto en el auto.</p></div><div class="tip"><b>Ventana ideal</b><p>Entre las 14 y las 17. Las funciones de 15:00 son el punto dulce: almuerzo tranquilo antes, merienda después.</p></div><div class="tip"><b>Mochila mínima</b><p>Botella, campera liviana, snack, cuaderno y lápices. El cuaderno convierte cualquier espera en un taller de dibujo.</p></div><div class="tip"><b>Ritual de cierre</b><p>Después de cada salida, que dibuje lo que más le gustó. Al final de la semana tienen un libro de las vacaciones.</p></div></div></main><button class="planbtn" id="planBtn">🗓️ Mi plan · <span id="planCount">0</span></button><aside class="drawer" id="drawer"><button class="close" id="closeDrawer">×</button><h3>Mi plan de la semana</h3><p style="color:var(--muted);margin:0 0 14px;font-size:13px">Las actividades que fuiste marcando con <b>+</b>, agrupadas por día.</p><div id="planList"></div><div class="total" id="planTotal"></div><button class="ghost" style="margin-top:14px;width:100%" onclick="window.print()">🖨️ Imprimir / guardar en PDF</button></aside><div class="profile-overlay" id="profileOverlay" aria-hidden="true"><section class="profile-sheet"><div class="sheet-top"><div><h2>Perfil de recomendación</h2><p>Se guarda únicamente en este navegador.</p></div><button class="sheet-close" id="profileClose">×</button></div><div class="profile-grid"><div class="profile-field"><label>Nombre</label><input id="pName" maxlength="18" value="Mica"></div><div class="profile-field"><label>Edad</label><input id="pAge" type="number" min="2" max="15" value="6"></div><div class="profile-field"><label>Ritmo ideal</label><select id="pMood"><option value="calma">Tranquilo y creativo</option><option value="equilibrado">Equilibrado</option><option value="energia">Con energía y movimiento</option></select></div><div class="profile-field"><label>Máximo por persona</label><select id="pBudget"><option value="0">Sólo gratis</option><option value="15000">Hasta $15.000</option><option value="25000" selected>Hasta $25.000</option><option value="35000">Hasta $35.000</option><option value="999999">Sin límite</option></select></div><div class="profile-field"><label>Distancia estimada</label><select id="pKm"><option value="5">Hasta 5 km</option><option value="8">Hasta 8 km</option><option value="12" selected>Hasta 12 km</option><option value="20">Hasta 20 km</option><option value="99">Toda CABA</option></select></div><div class="profile-field"><label>Prioridad</label><select id="pPriority"><option value="fit">Que le encante</option><option value="near">Cercanía</option><option value="free">Ahorro</option><option value="video">Que tenga video</option></select></div><div class="profile-field wide"><label>Qué le gusta</label><div class="interest-grid" id="interestGrid"><label class="interest-chip"><input type="checkbox" value="dibujar" checked><span>🎨 Dibujar</span></label><label class="interest-chip"><input type="checkbox" value="pintar" checked><span>🖌 Pintar</span></label><label class="interest-chip"><input type="checkbox" value="música" checked><span>🎵 Música</span></label><label class="interest-chip"><input type="checkbox" value="teatro" checked><span>🎭 Teatro</span></label><label class="interest-chip"><input type="checkbox" value="baile" checked><span>💃 Baile</span></label><label class="interest-chip"><input type="checkbox" value="cuentos" checked><span>📚 Cuentos</span></label><label class="interest-chip"><input type="checkbox" value="títeres"><span>🧸 Títeres</span></label><label class="interest-chip"><input type="checkbox" value="ciencia"><span>🔭 Ciencia</span></label><label class="interest-chip"><input type="checkbox" value="cine"><span>🎬 Cine</span></label><label class="interest-chip"><input type="checkbox" value="naturaleza"><span>🌿 Naturaleza</span></label></div></div></div><button class="profile-save" id="profileSave">Guardar y recalcular recomendaciones</button></section></div><div class="compare-overlay" id="compareOverlay" aria-hidden="true"><section class="compare-sheet"><div class="sheet-top"><div><h2>Comparador familiar</h2><p>Hasta tres propuestas, lado a lado.</p></div><button class="sheet-close" id="compareClose">×</button></div><div id="compareContent"></div></section></div><button class="compare-float" id="compareFloat">⇄ Comparar <span id="compareCount">0</span></button><div class="detail-overlay" id="detailOverlay" aria-hidden="true"><section class="detail-sheet" id="detailSheet"></section></div><div class="photo-modal" id="photoModal" aria-hidden="true"><div class="photo-shell"><div class="photo-stage"><button class="photo-close" id="photoClose" aria-label="Cerrar">×</button><img id="photoLarge" alt=""></div><div class="photo-info"><div><h3 id="photoTitle"></h3><p id="photoCaption"></p></div><div class="photo-actions"><a class="btn primary" id="photoSource" target="_blank" rel="noopener">Abrir fuente oficial</a><a class="btn" id="photoMap" target="_blank" rel="noopener">Ver mapa</a></div></div></div></div><nav class="mobile-nav" aria-label="Navegación"><button id="navToday"><span class="nav-icon">⌂</span><span>Hoy</span></button><button id="navExplore" class="active"><span class="nav-icon">✦</span><span>Explorar</span></button><button id="navFilters"><span class="nav-icon">⌕</span><span>Filtros</span></button><button id="navPlan"><span class="nav-icon">▣</span><span class="nav-count" id="mobilePlanCount">0</span><span>Mi plan</span></button></nav><footer><div class="wrap">Fuentes: Gobierno de la Ciudad · Linda BA · Complejo Teatral de Buenos Aires · Teatro Colón · Palacio Libertad · Usina del Arte · Plateanet · Alternativa Teatral · Única Cartelera · carteleras de Cinemark, Multiplex y Atlas · Buenos Aires para Chicos · Time Out Buenos Aires · sitios oficiales de cada museo y recomendaciones de familias. Hecho con cariño para Mica.</div></footer><script>
 const events=[
 /* ===== AGENDA DE VACACIONES (verificada) ===== */
 {"id":"feria-libro","days":["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],"time":"14:00–20:00","title":"34.ª Feria del Libro Infantil","cat":"Libros y talleres","cost":"Gratis","price":0,"rating":5.0,"fit":"Perfecta para Mica: ilustración, cuentos, talleres y espectáculos sin exigencia física.","desc":"Más de 70 stands, presentaciones, talleres, música y teatro. Se puede entrar y salir sin quedar atados a una función.","venue":"Centro de Convenciones de Buenos Aires","address":"Av. Figueroa Alcorta 2099, Recoleta","zone":"Cerca","km":9,"age":"4–12","indoor":true,"reserve":false,"buy":"https://linda.buenosaires.gob.ar/eventos/34deg-feria-del-libro-infantil","source":"Agenda oficial de la Ciudad","image":"https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80","tags":["dibujar","leer","tranquilo","gratis"],"pick":"top","verified":"Parcial"},
@@ -395,6 +538,13 @@ let activeDay=days[Math.min(todayIdx,6)],showFavs=false,rainMode=false,activeTag
 let realPhotos=JSON.parse(localStorage.getItem('micaRealPhotos')??'true');
 const favs=new Set(JSON.parse(localStorage.getItem('micaPremiumFavs')||'[]'));
 const plan=JSON.parse(localStorage.getItem('micaPlan')||'{}');
+
+const DEFAULT_PROFILE={name:'Mica',age:6,mood:'calma',budget:25000,maxKm:12,priority:'fit',
+ interests:['dibujar','pintar','música','teatro','baile','cuentos']};
+let familyProfile={...DEFAULT_PROFILE,...JSON.parse(localStorage.getItem('micaFamilyProfile')||'{}')};
+let compareIds=JSON.parse(localStorage.getItem('micaCompare')||'[]').slice(0,3);
+let liveWeather={loaded:false,rain:false,temp:null,label:'Clima no disponible'};
+
 const $=s=>document.querySelector(s);
 const norm=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const mapLink=a=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(a);
@@ -402,15 +552,197 @@ const stars=v=>'★'.repeat(Math.round(v))+'☆'.repeat(5-Math.round(v));
 const cap=s=>s[0].toUpperCase()+s.slice(1);
 const byId=id=>events.find(e=>e.id===id);
 const eventTime=(e,d=activeDay)=>(e.dayTimes&&e.dayTimes[d])||e.time;
-const QUICK=['dibujar','títeres','música','teatro','gratis','cerca','lluvia','naturaleza','merienda','ciencia','taller','cine','Única Cartelera'];
+const QUICK=['▶ con video','dibujar','títeres','música','teatro','gratis','cerca','lluvia','naturaleza','merienda','ciencia','taller','cine','Única Cartelera'];
+
+const VIDEO_LIBRARY={"circo-fokus":{"url":"https://www.youtube.com/watch?v=oSbg5kqL1N0","label":"Ver trailer de la obra","scope":"obra"},"manuelita":{"url":"https://www.instagram.com/reel/DaJazM0ouF7/","label":"Ver video de la obra","scope":"obra"},"remigio":{"url":"https://www.instagram.com/reel/DaLYCuuuaRz/","label":"Ver video de la obra","scope":"obra"},"seres":{"url":"https://www.instagram.com/reel/DHucrHAuGHW/","label":"Ver video de la obra","scope":"obra"},"planetario":{"url":"https://www.instagram.com/reel/DalQezuvgMH/","label":"Ver video de Alerta Espacial","scope":"actividad"},"parque-ciudad":{"url":"https://www.instagram.com/reel/DbOAvx2RDM4/","label":"Ver video del Parque de Invierno","scope":"actividad"},"lumiverse":{"url":"https://www.instagram.com/reel/DXUlC37AtmN/","label":"Ver recorrido real","scope":"lugar"},"miju-dibujo":{"url":"https://www.youtube.com/watch?v=V4j7AgyInTQ","label":"Ver recorrido del MIJU","scope":"lugar"},"miju-escultura":{"url":"https://www.youtube.com/watch?v=V4j7AgyInTQ","label":"Ver recorrido del MIJU","scope":"lugar"},"miju-camiseta":{"url":"https://www.youtube.com/watch?v=V4j7AgyInTQ","label":"Ver recorrido del MIJU","scope":"lugar"},"miju-caras":{"url":"https://www.youtube.com/watch?v=V4j7AgyInTQ","label":"Ver recorrido del MIJU","scope":"lugar"},"prohibido-no-tocar":{"url":"https://www.instagram.com/reel/C9hicGcukRy/","label":"Ver recorrido real","scope":"lugar"},"museo-ninos":{"url":"https://www.instagram.com/reel/DYcTrFWRQOr/","label":"Ver recorrido real","scope":"lugar"},"colon-almohadones":{"url":"https://www.instagram.com/p/DaQ7qpQgd2M/","label":"Ver video del espectáculo","scope":"obra"},"colon-cuentos-liricos":{"url":"https://www.youtube.com/watch?v=uygZKbBARac","label":"Ver video oficial","scope":"obra"},"usina-nilocos":{"url":"https://www.instagram.com/reel/DQdVgvbjKOl/","label":"Ver video del espectáculo","scope":"obra"},"usina-wantan":{"url":"https://www.instagram.com/reel/Da2yjB8u9Nz/","label":"Ver video del espectáculo","scope":"obra"},"plaza-raviolis":{"url":"https://www.youtube.com/watch?v=X4CSx7Me0T8","label":"Ver Piyama Party en vivo","scope":"obra"},"cine-toy-story":{"url":"https://www.youtube.com/watch?v=s_qpMMkvHYE","label":"Ver trailer oficial doblado","scope":"trailer"},"cine-minions":{"url":"https://www.youtube.com/watch?v=KG9wqUZYrMo","label":"Ver trailer oficial","scope":"trailer"},"cine-moana":{"url":"https://www.youtube.com/watch?v=n7f6hlKsxxo","label":"Ver trailer oficial","scope":"trailer"},"unica-cuentopos-gulubu":{"url":"https://www.instagram.com/reel/DNbBdYfxLFN/","label":"Ver video de la obra","scope":"obra"},"unica-vivitos-coleando-2":{"url":"https://www.youtube.com/watch?v=g5GuojkVBns","label":"Ver trailer de la obra","scope":"obra"},"unica-monster-buu":{"url":"https://www.instagram.com/reel/DQUv2LAD7Bh/","label":"Ver muestra del espectáculo","scope":"obra"},"unica-chingalepa":{"url":"https://www.youtube.com/watch?v=om_a73-k8iI","label":"Ver show musical","scope":"obra"},"unica-mago-oz":{"url":"https://www.instagram.com/reel/Da3dnA_tzOi/","label":"Ver video de la obra","scope":"obra"},"unica-invasion-robot":{"url":"https://noticias.mitelefe.com/espectaculos/vacaciones-de-invierno-invasion-robot-y-un-poco-de-ruido-en-moscu-teatro-pid","label":"Ver nota audiovisual de la obra","scope":"nota"},"plaza-dafne":{"url":"https://tn.com.ar/videos/show/novedades/2025/07/26/la-obra-para-chicos-que-se-anima-a-hablar-de-salud-mental-y-emociona-con-canciones-de-maria-elena-walsh/","label":"Ver video de la obra","scope":"nota"},"feria-libro":{"url":"https://www.youtube.com/watch?v=Oq7Q25wXA2w","label":"Ver video de la Feria 2026","scope":"actividad"},"moderno":{"url":"https://www.youtube.com/watch?v=MKsKX8wB8ko","label":"Ver una experiencia del Museo Moderno","scope":"actividad"},"museo-cine-mie":{"url":"https://www.youtube.com/watch?v=oWofxH5wp08","label":"Conocé el Museo del Cine","scope":"lugar"},"palacio-manuelita-inmersiva":{"url":"https://www.youtube.com/watch?v=fRWdSPP4t8A","label":"Ver la experiencia inmersiva de Manuelita","scope":"actividad"},"banda-sinfonica":{"url":"https://www.youtube.com/watch?v=mpgdOw19UD8","label":"Ver a la Banda Sinfónica en el San Martín","scope":"obra"},"museo-titeres":{"url":"https://www.youtube.com/watch?v=lFUy_tR5BFM","label":"Ver una función en el Museo del Títere","scope":"actividad"},"tecnopolis":{"url":"https://www.youtube.com/watch?v=Xx8UCc6StD8","label":"Ver Tecnópolis 2026","scope":"actividad"}};
+const VENUE_VIDEO_LIBRARY={"Palacio Libertad":{"url":"https://www.youtube.com/shorts/0Zr241jUc3g","label":"Ver planes infantiles del Palacio","scope":"programacion"},"Usina del Arte":{"url":"https://www.youtube.com/watch?v=sTYpWQJeY9o","label":"Ver vacaciones en la Usina del Arte","scope":"programacion"},"La Nube":{"url":"https://www.youtube.com/watch?v=jXvB3f1zrWc","label":"Conocé La Nube","scope":"lugar"},"Ecoparque":{"url":"https://www.youtube.com/watch?v=awn22RDQBco","label":"Ver recorrido 2026 del Ecoparque","scope":"lugar"},"Jardín Botánico":{"url":"https://www.youtube.com/watch?v=aWR1wgNlGJ0","label":"Ver recorrido completo del Jardín Botánico","scope":"lugar"},"Rosedal de Palermo":{"url":"https://www.youtube.com/watch?v=-eibVSJ1log","label":"Ver recorrido por el Rosedal","scope":"lugar"},"Reserva Ecológica":{"url":"https://www.youtube.com/watch?v=2JNfnVLEyeI","label":"Ver recorrido por la Reserva","scope":"lugar"},"El Ateneo Grand Splendid":{"url":"https://www.youtube.com/watch?v=-5VdfESB_n8","label":"Ver recorrido por El Ateneo","scope":"lugar"},"MNBA":{"url":"https://www.youtube.com/watch?v=fRYyfVZPdso","label":"Ver recorrido por Bellas Artes","scope":"lugar"},"Museo José Hernández":{"url":"https://www.youtube.com/watch?v=q3b30wjiECE","label":"Ver recorrido por el Museo José Hernández","scope":"lugar"},"Museo Luis Perlotti":{"url":"https://www.youtube.com/watch?v=wrDuXNYXbaE","label":"Ver el Museo Perlotti","scope":"lugar"},"Museo Benito Quinquela Martín":{"url":"https://www.youtube.com/watch?v=ndxsJbh6HJU","label":"Ver visita virtual al Museo Quinquela","scope":"lugar"},"Centro Cultural Recoleta":{"url":"https://www.youtube.com/watch?v=n6iHPdKUY50","label":"Ver recorrido por el Recoleta","scope":"lugar"},"Subte Línea A":{"url":"https://www.youtube.com/watch?v=BH781IR4BsE","label":"Ver los coches históricos de la Línea A","scope":"lugar"},"Museo del Humor":{"url":"https://www.youtube.com/watch?v=hlhvt-0-4HU","label":"Ver recorrido por el Museo del Humor","scope":"lugar"},"Barrio Chino":{"url":"https://www.youtube.com/watch?v=F9npx2DE8yA","label":"Ver el Barrio Chino con chicos","scope":"lugar"},"Feria de Mataderos":{"url":"https://www.youtube.com/watch?v=ySq7FWIXiCc","label":"Ver recorrido por la Feria de Mataderos","scope":"lugar"},"Calle Defensa":{"url":"https://www.youtube.com/watch?v=P3dUibKsS9M","label":"Ver recorrido por la Feria de San Telmo","scope":"lugar"},"Museo de Arte Moderno":{"url":"https://www.youtube.com/watch?v=MKsKX8wB8ko","label":"Ver una experiencia del Museo Moderno","scope":"lugar"},"Museo del Cine":{"url":"https://www.youtube.com/watch?v=oWofxH5wp08","label":"Conocé el Museo del Cine","scope":"lugar"},"Centro de Convenciones de Buenos Aires":{"url":"https://www.youtube.com/watch?v=4pq8ff6Yqes","label":"Ver la Feria del Libro Infantil 2026","scope":"actividad"},"Tecnópolis":{"url":"https://www.youtube.com/watch?v=Xx8UCc6StD8","label":"Ver Tecnópolis 2026","scope":"lugar"}};
+const videoInfo=e=>VIDEO_LIBRARY[e.id]||VENUE_VIDEO_LIBRARY[e.venue]||null;
+const youtubeId=url=>{
+ try{const u=new URL(url);if(u.hostname.includes('youtu.be'))return u.pathname.slice(1);
+ if(u.hostname.includes('youtube.com'))return u.searchParams.get('v')}catch(_){}
+ return null;
+};
+const clamp=n=>Math.max(1,Math.min(5,Math.round(n*10)/10));
+const scoreParts=e=>{
+ const t=norm([e.title,e.cat,e.fit,e.desc,...e.tags].join(' '));
+ let calm=4.5;
+ if(/k-pop|kpop|circo|acción|aventura|físico|adrenalina|gamer|láser|superhéroe|competencia|ruidos|intens/.test(t))calm-=1.1;
+ if(/tranquil|poétic|dibujo|pint|museo|cuento|títere|libro|sensibl/.test(t))calm+=.45;
+ const near=e.km===0?4.1:e.km<=4?5:e.km<=7?4.6:e.km<=10?4.1:e.km<=13?3.5:e.km<=18?2.8:2.1;
+ const value=e.price===0?5:e.price==null?3.6:e.price<=15000?4.4:e.price<=25000?3.8:e.price<=35000?3.2:2.7;
+ const confidence=e.verified==='Confirmado'?5:e.verified==='Clásico'?4.3:3.7;
+ return {"Afinidad":clamp(e.rating),"Tranquilidad":clamp(calm),"Cercanía":clamp(near),"Precio/valor":clamp(value),"Datos confirmados":clamp(confidence)};
+};
+const scoreRows=e=>Object.entries(scoreParts(e)).map(([k,v])=>`<div class="score-row"><span>${k}</span><div class="score-track"><div class="score-fill" style="width:${v/5*100}%"></div></div><b>${v.toFixed(1)}</b></div>`).join('');
+
+const eventText=e=>norm([e.title,e.cat,e.fit,e.desc,e.source,...(e.tags||[])].join(' '));
+const ageRange=e=>{
+ const nums=String(e.age||'').match(/\d+/g)?.map(Number)||[];
+ return nums.length>1?[nums[0],nums[1]]:nums.length?[nums[0],15]:[2,15];
+};
+const moneyLabel=n=>n>=999999?'sin límite':n===0?'sólo gratis':'hasta $'+Number(n).toLocaleString('es-AR');
+const personalReasons=e=>{
+ const t=eventText(e),r=[];
+ const hits=(familyProfile.interests||[]).filter(x=>t.includes(norm(x)));
+ if(hits.length)r.push('coincide con '+hits.slice(0,2).join(' y '));
+ if(e.price===0)r.push('es gratis');
+ else if(e.price!=null&&e.price<=familyProfile.budget)r.push('entra en presupuesto');
+ if(e.km>0&&e.km<=familyProfile.maxKm)r.push('queda dentro de la distancia elegida');
+ if(videoInfo(e))r.push('podés verlo antes');
+ if(liveWeather.rain&&e.indoor)r.push('funciona bien con lluvia');
+ return r.length?r.slice(0,3).join(' · '):'buena afinidad general con el perfil';
+};
+const personalScore=e=>{
+ const t=eventText(e),[amin,amax]=ageRange(e);
+ let s=e.rating*17;
+ const interests=familyProfile.interests||[];
+ s+=Math.min(18,interests.filter(x=>t.includes(norm(x))).length*5);
+ if(familyProfile.age>=amin&&familyProfile.age<=amax)s+=7;else s-=18;
+ if(familyProfile.mood==='calma'){
+   if(/tranquil|poétic|dibu|pint|cuento|libro|títere|museo|sensibl|arte/.test(t))s+=9;
+   if(/k-pop|kpop|adrenalina|físico|láser|gamer|superhéroe|competencia|ruidos|intens/.test(t))s-=13;
+ }else if(familyProfile.mood==='energia'){
+   if(/circo|baile|danza|aventura|juego|interactiv|show|k-pop|kpop/.test(t))s+=9;
+ }
+ if(e.price===0)s+=familyProfile.priority==='free'?15:8;
+ else if(e.price==null)s-=2;
+ else if(familyProfile.budget===0)s-=28;
+ else if(e.price<=familyProfile.budget)s+=5;
+ else s-=Math.min(24,8+(e.price-familyProfile.budget)/3000);
+ if(e.km>0){
+   if(e.km<=familyProfile.maxKm)s+=familyProfile.priority==='near'?12:6;
+   else s-=Math.min(22,(e.km-familyProfile.maxKm)*1.8);
+ }
+ if(videoInfo(e))s+=familyProfile.priority==='video'?13:3;
+ if(liveWeather.rain)s+=e.indoor?9:-17;
+ if(e.verified==='Confirmado')s+=3;
+ if(familyProfile.priority==='fit')s+=e.rating*2;
+ return Math.max(1,Math.min(5,Math.round((s/20)*10)/10));
+};
+const smartSort=(a,b)=>personalScore(b)-personalScore(a)||b.rating-a.rating||(a.km||99)-(b.km||99);
+
+
 
 const screenshotUrl=url=>url&&/^https?:\/\//i.test(url)
- ? 'https://image.thum.io/get/width/1200/crop/720/noanimate/maxAge/24/?url='+encodeURIComponent(url)
+ ? 'https://image.thum.io/get/width/1000/crop/680/noanimate/maxAge/24/?url='+encodeURIComponent(url)
  : '';
-const visualUrl=e=>realPhotos&&screenshotUrl(e.buy)?screenshotUrl(e.buy):e.image;
 const safeText=s=>(s||'').replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+const mediaScope=vi=>!vi?'':({
+ obra:'Video de la obra',trailer:'Trailer oficial',actividad:'Video de la actividad',
+ lugar:'Recorrido del lugar',programacion:'Video de la programación',nota:'Nota audiovisual'
+}[vi.scope]||'Video real');
+const ytThumb=(url,size='maxresdefault')=>{const id=youtubeId(url);return id?`https://i.ytimg.com/vi/${id}/${size}.jpg`:''};
+const posterData=e=>{
+ const title=safeText(e.title).slice(0,54),venue=safeText(e.venue).slice(0,40);
+ const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8b5cf6"/><stop offset=".55" stop-color="#ff4f9a"/><stop offset="1" stop-color="#33d6ff"/></linearGradient></defs><rect width="1200" height="700" fill="#080b16"/><circle cx="180" cy="110" r="250" fill="url(#g)" opacity=".72"/><circle cx="1040" cy="620" r="330" fill="url(#g)" opacity=".42"/><text x="70" y="370" fill="white" font-family="Arial,sans-serif" font-weight="800" font-size="68">${title}</text><text x="72" y="435" fill="#d6d9e8" font-family="Arial,sans-serif" font-size="31">${venue}</text><text x="72" y="615" fill="#ffd166" font-family="Arial,sans-serif" font-weight="700" font-size="27">MICA WEEK · PORTADA EDITORIAL</text></svg>`;
+ return 'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(svg);
+};
+const imageCandidates=e=>{
+ const vi=videoInfo(e),arr=[];
+ if(realPhotos&&vi&&youtubeId(vi.url)){arr.push(ytThumb(vi.url,'maxresdefault'),ytThumb(vi.url,'hqdefault'))}
+ if(realPhotos&&e.buy)arr.push(screenshotUrl(e.buy));
+ if(e.image)arr.push(e.image);
+ arr.push(posterData(e));
+ return [...new Set(arr.filter(Boolean))];
+};
+const visualUrl=e=>imageCandidates(e)[0];
+const visualKind=e=>{
+ const vi=videoInfo(e);
+ if(realPhotos&&vi&&youtubeId(vi.url))return 'Imagen real del video';
+ if(realPhotos&&e.buy)return 'Vista de la fuente';
+ return 'Portada ilustrativa';
+};
+window.fallbackImage=img=>{
+ const e=byId(img.dataset.id);if(!e)return;
+ const choices=imageCandidates(e);let i=Number(img.dataset.i||0)+1;
+ if(i<choices.length){img.dataset.i=i;img.src=choices[i]}
+};
 
 
+
+
+function videoMini(e){
+ const vi=videoInfo(e),thumb=visualUrl(e);
+ return `<article class="video-mini" onclick="openDetail('${e.id}')"><img loading="lazy" src="${thumb}" data-id="${e.id}" data-i="0" alt="${safeText(e.title)}" onerror="fallbackImage(this)"><div class="video-mini-play">▶</div><div class="video-mini-info"><b>${e.title}</b><small>${vi.label} · Puntaje ${e.rating.toFixed(1)}/5</small><span class="video-mini-scope">${mediaScope(vi)}</span></div></article>`;
+}
+function renderVideoShowcase(){
+ const available=events.filter(e=>videoInfo(e)).sort((a,b)=>b.rating-a.rating||(a.km||99)-(b.km||99));
+ const free=available.filter(e=>e.price===0||/gratis/i.test(e.cost||''));
+ $('#videoStrip').innerHTML=available.slice(0,16).map(videoMini).join('');
+ $('#freeVideoStrip').innerHTML=free.map(videoMini).join('');
+}
+
+
+function renderSmartHub(){
+ const name=familyProfile.name||'Mica';
+ $('#smartTitle').textContent=`Lo mejor para ${name} ${activeDay==='lunes'?'hoy':'el '+activeDay}`;
+ $('#profilePill').textContent=`👧 ${name} · ${familyProfile.age} años · ${familyProfile.mood}`;
+ $('#budgetPill').textContent=`💰 ${moneyLabel(familyProfile.budget)}`;
+ const candidates=events.filter(e=>e.days.includes(activeDay)).sort(smartSort).slice(0,3);
+ $('#smartRecommendations').innerHTML=candidates.map((e,i)=>`<article class="smart-pick" onclick="openDetail('${e.id}')"><div class="smart-pick-img"><img src="${visualUrl(e)}" data-id="${e.id}" data-i="0" alt="${safeText(e.title)}" onerror="fallbackImage(this)"><span class="smart-rank">${i+1}</span></div><div class="smart-pick-body"><span class="personal-badge">✦ Para ${safeText(name)}</span><h3>${e.title}</h3><div class="smart-reason">${personalReasons(e)}</div><div class="smart-scoreline"><span>${e.cost} · ${e.zone}</span><b>${personalScore(e).toFixed(1)}</b></div></div></article>`).join('');
+}
+function syncProfileForm(){
+ $('#pName').value=familyProfile.name||'Mica';$('#pAge').value=familyProfile.age||6;$('#pMood').value=familyProfile.mood||'calma';
+ $('#pBudget').value=String(familyProfile.budget??25000);$('#pKm').value=String(familyProfile.maxKm??12);$('#pPriority').value=familyProfile.priority||'fit';
+ document.querySelectorAll('#interestGrid input').forEach(x=>x.checked=(familyProfile.interests||[]).includes(x.value));
+}
+function saveProfile(){
+ familyProfile={name:($('#pName').value||'Mica').trim(),age:+$('#pAge').value||6,mood:$('#pMood').value,
+ budget:+$('#pBudget').value,maxKm:+$('#pKm').value,priority:$('#pPriority').value,
+ interests:[...document.querySelectorAll('#interestGrid input:checked')].map(x=>x.value)};
+ localStorage.setItem('micaFamilyProfile',JSON.stringify(familyProfile));closeProfile();setup();
+}
+function openProfile(){syncProfileForm();$('#profileOverlay').classList.add('open');$('#profileOverlay').setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
+function closeProfile(){$('#profileOverlay').classList.remove('open');$('#profileOverlay').setAttribute('aria-hidden','true');document.body.style.overflow=''}
+function chooseWeek(){
+ const usedCats=new Set(),chosen=[];
+ days.forEach(d=>{
+   const dayOptions=events.filter(e=>e.days.includes(d))
+    .filter(e=>familyProfile.budget!==0||e.price===0)
+    .sort((a,b)=>{
+      const repeatA=usedCats.has(a.cat)?-.35:0,repeatB=usedCats.has(b.cat)?-.35:0;
+      return (personalScore(b)+repeatB)-(personalScore(a)+repeatA);
+    });
+   const e=dayOptions[0];if(e){plan[d]=[e.id];usedCats.add(e.cat);chosen.push([d,e])}
+ });
+ localStorage.setItem('micaPlan',JSON.stringify(plan));render();renderPlan();updatePlanCount();
+ const known=chosen.map(x=>x[1]),sum=known.reduce((a,e)=>a+(e.price||0),0),unknown=known.filter(e=>e.price==null).length;
+ $('#weekResult').hidden=false;$('#weekResult').innerHTML=`<b>Semana armada.</b> ${chosen.length} salidas, una por día, con variedad de categorías. Costo conocido por persona: <b>$${sum.toLocaleString('es-AR')}</b>${unknown?` + ${unknown} precios a confirmar`:''}. <button class="ghost" onclick="document.querySelector('#planBtn').click()" style="margin-left:8px">Ver plan</button>`;
+ document.querySelector('#weekResult').scrollIntoView({behavior:'smooth',block:'center'});
+}
+function surpriseMe(){
+ const options=events.filter(e=>e.days.includes(activeDay)).sort(smartSort).slice(0,12);
+ const pool=options.filter(e=>personalScore(e)>=4.2);const e=(pool.length?pool:options)[Math.floor(Math.random()*(pool.length?pool.length:options.length))];
+ if(e)openDetail(e.id);
+}
+function toggleCompare(id){
+ compareIds=compareIds.includes(id)?compareIds.filter(x=>x!==id):[...compareIds,id].slice(-3);
+ localStorage.setItem('micaCompare',JSON.stringify(compareIds));updateCompare();render();
+}
+function updateCompare(){
+ $('#compareCount').textContent=compareIds.length;$('#compareFloat').classList.toggle('show',compareIds.length>0);
+}
+function openCompare(){renderCompare();$('#compareOverlay').classList.add('open');$('#compareOverlay').setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
+function closeCompare(){$('#compareOverlay').classList.remove('open');$('#compareOverlay').setAttribute('aria-hidden','true');document.body.style.overflow=''}
+function renderCompare(){
+ const list=compareIds.map(byId).filter(Boolean);
+ $('#compareContent').innerHTML=list.length?`<div class="compare-grid">${list.map(e=>`<article class="compare-card"><img src="${visualUrl(e)}" data-id="${e.id}" data-i="0" alt="${safeText(e.title)}" onerror="fallbackImage(this)"><div class="compare-card-body"><h3>${e.title}</h3><div class="compare-row"><span>Puntaje personal</span><b>${personalScore(e).toFixed(1)}/5</b></div><div class="compare-row"><span>Motivo</span><b>${personalReasons(e)}</b></div><div class="compare-row"><span>Precio</span><b>${e.cost}</b></div><div class="compare-row"><span>Distancia</span><b>${e.zone}${e.km?' · ~'+e.km+' km':''}</b></div><div class="compare-row"><span>Plan lluvia</span><b>${e.indoor?'Sí':'No'}</b></div><div class="compare-row"><span>Video</span><b>${videoInfo(e)?'Sí':'No'}</b></div><button class="compare-mini on" onclick="toggleCompare('${e.id}');renderCompare()">Quitar</button></div></article>`).join('')}</div>`:'<div class="compare-empty">Elegí hasta tres propuestas con el botón “Comparar”.</div>';
+}
+async function shareCurrentPlan(){
+ const lines=days.flatMap(d=>(plan[d]||[]).map(id=>{const e=byId(id);return e?`${cap(d)}: ${e.title} · ${eventTime(e,d)} · ${e.venue}`:''}).filter(Boolean));
+ const text=lines.length?`Plan de ${familyProfile.name||'Mica'}:\n${lines.join('\n')}`:'Todavía no armamos el plan.';
+ try{if(navigator.share)await navigator.share({title:'Mica Week',text});else{await navigator.clipboard.writeText(text);alert('Plan copiado')}}catch(_){}
+}
+async function loadWeather(lat=-34.6037,lon=-58.3816){
+ try{
+  const url=`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,precipitation,rain,weather_code&daily=precipitation_probability_max&timezone=auto&forecast_days=1`;
+  const r=await fetch(url);if(!r.ok)throw new Error('weather');const d=await r.json();
+  const temp=Math.round(d.current?.temperature_2m),prob=d.daily?.precipitation_probability_max?.[0]??0,rain=(d.current?.rain||0)>0||prob>=45;
+  liveWeather={loaded:true,rain,temp,label:`${rain?'☔':'☀'} ${temp}° · lluvia ${prob}%`};
+  $('#weatherPill').textContent=liveWeather.label;$('#weatherPill').classList.remove('weather-loading');$('#weatherPill').classList.toggle('warn',rain);$('#weatherPill').classList.toggle('good',!rain);
+  renderSmartHub();render();
+ }catch(_){liveWeather={loaded:false,rain:false,temp:null,label:'Clima no disponible'};$('#weatherPill').textContent='Clima no disponible';$('#weatherPill').classList.remove('weather-loading')}
+}
 
 function setup(){
  $('#totalStat').textContent=events.length;
@@ -418,12 +750,14 @@ function setup(){
  $('#theatreStat').textContent=events.filter(e=>/teatro|música|circo|títere|musical|concierto|danza|ópera|magia|recital/i.test(e.cat)).length;
  $('#nearStat').textContent=events.filter(e=>e.km>0&&e.km<=8).length;
  $('#rainStat').textContent=events.filter(e=>e.indoor).length;
+  $('#videoStat').textContent=events.filter(e=>videoInfo(e)).length;
+ renderSmartHub();updateCompare();
 
- const podium=[...events].sort((a,b)=>(b.pick==='winner')-(a.pick==='winner')||b.rating-a.rating).slice(0,5);
+ const podium=[...events].sort(smartSort).slice(0,5);
  $('#podium').innerHTML=podium.map((e,i)=>`<div class="pod" onclick="focusEvent('${e.id}')"><div class="n">${i+1}</div><h4>${e.title}</h4><small>${e.venue} · ${e.zone}</small><div class="tagline">${e.cost}</div></div>`).join('');
 
  $('#days').innerHTML=days.map(d=>`<button class="day ${d===activeDay?'active':''} ${days[todayIdx]===d?'today':''}" data-day="${d}">${cap(d)} <small>${events.filter(e=>e.days.includes(d)).length}</small></button>`).join('');
- document.querySelectorAll('[data-day]').forEach(b=>b.onclick=()=>{activeDay=b.dataset.day;showFavs=false;$('#favoritesBtn').classList.remove('on');setup();});
+ document.querySelectorAll('[data-day]').forEach(b=>b.onclick=()=>{activeDay=b.dataset.day;showFavs=false;$('#favoritesBtn').classList.remove('on');setup();if(innerWidth<=640)closeFilters();});
 
  $('#chips').innerHTML=QUICK.map(t=>`<button class="chip ${activeTag===t?'on':''}" data-tag="${t}">${t}</button>`).join('');
  document.querySelectorAll('[data-tag]').forEach(b=>b.onclick=()=>{activeTag=activeTag===b.dataset.tag?'':b.dataset.tag;setup();});
@@ -435,14 +769,30 @@ function setup(){
   ['search','cost','distance','category','rating','sort'].forEach(id=>$('#'+id).addEventListener(id==='search'?'input':'change',render));
   $('#favoritesBtn').onclick=()=>{showFavs=!showFavs;$('#favoritesBtn').classList.toggle('on',showFavs);render()};
   $('#photoBtn').classList.toggle('on',realPhotos);
-  $('#photoBtn').textContent=realPhotos?'🖼️ Vistas de las fuentes':'🎨 Imágenes ilustrativas';
-  $('#photoBtn').onclick=()=>{realPhotos=!realPhotos;localStorage.setItem('micaRealPhotos',JSON.stringify(realPhotos));$('#photoBtn').classList.toggle('on',realPhotos);$('#photoBtn').textContent=realPhotos?'🖼️ Vistas de las fuentes':'🎨 Imágenes ilustrativas';render()};
+  $('#photoBtn').textContent=realPhotos?'📷 Fotos y vistas reales':'🎨 Portadas ilustrativas';
+  $('#photoBtn').onclick=()=>{realPhotos=!realPhotos;localStorage.setItem('micaRealPhotos',JSON.stringify(realPhotos));$('#photoBtn').classList.toggle('on',realPhotos);$('#photoBtn').textContent=realPhotos?'📷 Fotos y vistas reales':'🎨 Portadas ilustrativas';render()};
   $('#rainBtn').onclick=()=>{rainMode=!rainMode;$('#rainBtn').classList.toggle('on',rainMode);render()};
   $('#planBtn').onclick=()=>{$('#drawer').classList.add('open');renderPlan()};
   $('#closeDrawer').onclick=()=>$('#drawer').classList.remove('open');
   $('#photoClose').onclick=()=>closePhoto();
   $('#photoModal').onclick=e=>{if(e.target.id==='photoModal')closePhoto()};
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')closePhoto()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){closePhoto();closeDetail();closeFilters();closeProfile();closeCompare()}});
+
+  $('#filterClose').onclick=()=>closeFilters();
+  $('#navFilters').onclick=()=>openFilters();
+  $('#navPlan').onclick=()=>{$('#drawer').classList.add('open');renderPlan()};
+  $('#navExplore').onclick=()=>{closeFilters();document.querySelector('.toolbar').scrollIntoView({behavior:'smooth',block:'start'})};
+  $('#navToday').onclick=()=>{activeDay=days[todayIdx];showFavs=false;setup();setTimeout(()=>document.querySelector('.toolbar').scrollIntoView({behavior:'smooth'}),80)};
+  $('#shareAppBtn').onclick=()=>shareApp();
+  $('#allVideosBtn').onclick=()=>{activeTag='▶ con video';document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.tag==='▶ con video'));render();document.querySelector('.toolbar').scrollIntoView({behavior:'smooth',block:'start'})};
+
+  $('#profileOpenBtn').onclick=openProfile;$('#profileClose').onclick=closeProfile;$('#profileSave').onclick=saveProfile;
+  $('#profileOverlay').onclick=e=>{if(e.target.id==='profileOverlay')closeProfile()};
+  $('#autoWeekBtn').onclick=chooseWeek;$('#surpriseBtn').onclick=surpriseMe;$('#sharePlanBtn').onclick=shareCurrentPlan;
+  $('#compareFloat').onclick=openCompare;$('#compareClose').onclick=closeCompare;$('#compareOverlay').onclick=e=>{if(e.target.id==='compareOverlay')closeCompare()};
+
+  $('#detailOverlay').onclick=e=>{if(e.target.id==='detailOverlay')closeDetail()};
+
 
  }
  render();updatePlanCount();
@@ -456,11 +806,13 @@ function render(){
  let list=base.filter(e=>{
   const hay=norm([e.title,e.cat,e.fit,e.desc,e.venue,e.address,e.source,...e.tags].join(' ')).includes(q);
   const costok=cost==='all'||(cost==='free'&&e.price===0)||(cost==='paid'&&e.price!==0);
-  const tagok=!activeTag||norm([...e.tags,e.cat,e.title,e.fit,e.source].join(' ')).includes(norm(activeTag));
+  const tagok=!activeTag||(activeTag==='▶ con video'
+    ?Boolean(videoInfo(e))
+    :norm([...e.tags,e.cat,e.title,e.fit,e.source].join(' ')).includes(norm(activeTag)));
   return hay&&costok&&tagok&&(dist==='all'||e.zone===dist)&&(cat==='all'||e.cat===cat)&&e.rating>=min&&(!rainMode||e.indoor)&&(!showFavs||favs.has(e.id));
  });
  const rank={winner:0,top:1,recommended:2,good:3,backup:4};
- if(sort==='score')list.sort((a,b)=>(rank[a.pick]??9)-(rank[b.pick]??9)||b.rating-a.rating||(a.km||99)-(b.km||99));
+ if(sort==='score')list.sort(smartSort);
  if(sort==='near')list.sort((a,b)=>(a.km??99)-(b.km??99)||b.rating-a.rating);
  if(sort==='free')list.sort((a,b)=>(a.price===0?0:1)-(b.price===0?0:1)||b.rating-a.rating);
  if(sort==='cheap')list.sort((a,b)=>(a.price??1e9)-(b.price??1e9));
@@ -470,34 +822,48 @@ function render(){
  $('#count').textContent=`${list.length} ${list.length===1?'opción visible':'opciones visibles'}${rainMode?' · sólo bajo techo':''}${activeTag?' · filtro: '+activeTag:''} · ${events.length} propuestas en total`;
  $('#grid').innerHTML=list.length?list.map((e,i)=>{
   const rb=ribbon(e.pick),vs=vstamp(e.verified),inPlan=(plan[activeDay]||[]).includes(e.id);
-  return `<article class="card ${inPlan?'inplan':''}" id="card-${e.id}" style="animation-delay:${Math.min(i*22,320)}ms">
-  <div class="image" onclick="openPhoto('${e.id}')" title="Abrir vista ampliada">
-  <img loading="lazy" src="${visualUrl(e)}" data-fallback="${e.image}" alt="${safeText(e.title)}"
-       referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=this.dataset.fallback">
-  <div class="photo-kind">${realPhotos?'Vista de la fuente':'Ilustrativa'}</div>
+  return `<article class="card ${inPlan?'inplan':''}" id="card-${e.id}" style="animation-delay:${Math.min(i*22,320)}ms"><div class="image" onclick="openDetail('${e.id}')" title="Abrir ficha"><img loading="lazy" src="${visualUrl(e)}" data-id="${e.id}" data-i="0" alt="${safeText(e.title)}"
+       referrerpolicy="no-referrer" onerror="fallbackImage(this)"><div class="photo-kind">${visualKind(e)}</div>
+  ${videoInfo(e)?`<div class="video-badge">▶ ${mediaScope(videoInfo(e))}</div>`:''}
   ${rb?`<div class="ribbon ${rb[0]}">${rb[1]}</div>`:''}
-  <div class="badges"><span class="badge ${e.price===0?'free':'paid'}">${e.cost}</span><span class="badge">${e.zone}${e.km?' · ~'+e.km+' km':''}</span></div></div>
-  <div class="body">
-   <div class="titleline"><h3>${e.title}</h3><span class="score">${e.rating.toFixed(1)}</span></div>
-   <div class="stars">${stars(e.rating)}</div><span class="cat">${e.cat}</span>
-   <div class="meta"><div>🕒 ${eventTime(e)}</div><div>👧 ${e.age}</div><div>📍 ${e.venue}</div><div>${e.indoor?'🏠 Bajo techo':'🌤️ Aire libre'}</div></div>
-   <div class="why"><b>Para Mica:</b> ${e.fit}</div>
-   <p class="desc">${e.desc}</p>
-   <p class="desc" style="font-size:11.5px"><b>Dirección:</b> ${e.address} · <b>Fuente:</b> ${e.source}</p>
-   <span class="verified ${vs[0]}">${vs[1]}</span>
-   <div class="actions">
-    <a class="btn primary" href="${e.buy}" target="_blank" rel="noopener">${e.reserve?'Reservar':'Ver info'}</a>
-    <a class="btn icon" href="${mapLink(e.address)}" target="_blank" rel="noopener" title="Mapa">🗺️</a>
-    <button class="btn icon heart ${favs.has(e.id)?'on':''}" onclick="toggleFav('${e.id}')" title="Favorito">${favs.has(e.id)?'♥':'♡'}</button>
-    <button class="btn icon plus ${inPlan?'on':''}" onclick="togglePlan('${e.id}')" title="Agregar al plan del día">${inPlan?'✓':'+'}</button>
-   </div></div></article>`}).join('')
+  <div class="badges"><span class="badge ${e.price===0?'free':'paid'}">${e.cost}</span><span class="badge">${e.zone}${e.km?' · ~'+e.km+' km':''}</span></div></div><div class="body"><div class="titleline"><h3>${e.title}</h3><span class="score"><small>Para ${safeText(familyProfile.name||"Mica")}</small>${personalScore(e).toFixed(1)}</span></div><div class="stars">${stars(personalScore(e))}</div><span class="cat">${e.cat}</span><div class="meta"><div>🕒 ${eventTime(e)}</div><div>👧 ${e.age}</div><div>📍 ${e.venue}</div><div>${e.indoor?'🏠 Bajo techo':'🌤️ Aire libre'}</div></div><div class="why"><b>Para Mica:</b> ${e.fit}</div><p class="desc">${e.desc}</p><div class="media-trust"><span class="real">📷 imagen garantizada</span>${videoInfo(e)?`<span class="real">▶ ${mediaScope(videoInfo(e))}</span>`:'<span>sin video específico</span>'}</div><button class="compare-mini ${compareIds.includes(e.id)?'on':''}" onclick="event.stopPropagation();toggleCompare('${e.id}')">${compareIds.includes(e.id)?'✓ Seleccionada para comparar':'⇄ Comparar con otra'}</button>
+   ${videoInfo(e)?`<a class="video-cta" href="${videoInfo(e).url}" target="_blank" rel="noopener"><span class="pulse-play">▶</span><span>${videoInfo(e).label}<br><small>${mediaScope(videoInfo(e))} · enlace comprobado</small></span></a>`:''}
+   <p class="desc" style="font-size:11.5px"><b>Dirección:</b> ${e.address} · <b>Fuente:</b> ${e.source}</p><span class="verified ${vs[0]}">${vs[1]}</span><div class="actions"><button class="btn primary" onclick="openDetail('${e.id}')">Ver ficha</button><a class="btn icon" href="${mapLink(e.address)}" target="_blank" rel="noopener" title="Abrir mapa">🗺️</a><button class="btn icon heart ${favs.has(e.id)?'on':''}" onclick="toggleFav('${e.id}')" title="Favorito">${favs.has(e.id)?'♥':'♡'}</button><button class="btn icon plus ${inPlan?'on':''}" onclick="togglePlan('${e.id}')" title="Agregar al plan del día">${inPlan?'✓':'+'}</button></div></div></article>`}).join('')
  :'<div class="empty"><b>Nada con esos filtros.</b><br>Probá quitando el modo lluvia o ampliando la distancia.</div>';
 }
+
+
+window.openDetail=id=>{
+ const e=byId(id);if(!e)return;
+ const vi=videoInfo(e),yt=vi?youtubeId(vi.url):null,inPlan=(plan[activeDay]||[]).includes(e.id),vs=vstamp(e.verified);
+ const media=!vi?'':(yt
+  ?`<div class="video-preview"><iframe src="https://www.youtube-nocookie.com/embed/${yt}" title="${safeText(e.title)}" loading="lazy" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>`
+  :`<div class="video-preview"><a class="video-link-card" href="${vi.url}" target="_blank" rel="noopener"><span class="video-play">▶</span><span><b>${vi.label}</b><small>${mediaScope(vi)} · enlace comprobado</small></span></a></div>`);
+ $('#detailSheet').innerHTML=`<div class="detail-cover" onclick="openPhoto('${e.id}')"><button class="detail-close" onclick="event.stopPropagation();closeDetail()" aria-label="Cerrar">×</button><img src="${visualUrl(e)}" data-id="${e.id}" data-i="0" alt="${safeText(e.title)}" referrerpolicy="no-referrer" onerror="fallbackImage(this)"><div class="detail-score"><b>${personalScore(e).toFixed(1)}</b><span>Para<br>${safeText(familyProfile.name||"Mica")}</span></div></div><div class="detail-body"><div class="detail-kicker"><span>${e.cat}</span><span>·</span><span class="${vs[0]}">${vs[1]}</span>${vi?`<span>·</span><span>${mediaScope(vi)}</span>`:''}</div><h2>${e.title}</h2><div class="detail-facts"><span>🕒 ${eventTime(e)}</span><span>👧 ${e.age}</span><span>📍 ${e.venue}</span><span>${e.zone}${e.km?' · ~'+e.km+' km':''}</span><span>${e.cost}</span></div><div class="detail-fit"><b>Por qué puede gustarle a ${safeText(familyProfile.name||"Mica")}:</b><br>${e.fit}<br><small style="color:var(--green)">✦ ${personalReasons(e)}</small></div><p>${e.desc}</p>
+  ${media}
+  <div class="score-panel"><h4>Cómo construimos el puntaje</h4>${scoreRows(e)}
+   <div class="editorial-note">Puntaje personalizado: combina el perfil guardado, edad, gustos, intensidad, presupuesto, distancia estimada, clima, video y confirmación de los datos.</div></div><p class="desc"><b>Dirección:</b> ${e.address}<br><b>Fuente:</b> ${e.source}</p><div class="detail-actions"><a class="detail-action primary" href="${e.buy}" target="_blank" rel="noopener">${e.reserve?'🎟️ Entradas / reserva':'ℹ️ Información oficial'}</a>
+   ${vi?`<a class="detail-action video" href="${vi.url}" target="_blank" rel="noopener">▶ ${vi.label}</a>`:''}
+   <a class="detail-action" href="${mapLink(e.address)}" target="_blank" rel="noopener">🗺️ Abrir mapa</a><button class="detail-action" onclick="shareEvent('${e.id}')">↗ Compartir</button><button class="detail-action" onclick="toggleFav('${e.id}');openDetail('${e.id}')">${favs.has(e.id)?'♥ Quitar favorito':'♡ Guardar favorito'}</button><button class="detail-action ${inPlan?'primary':''}" onclick="togglePlan('${e.id}');openDetail('${e.id}')">${inPlan?'✓ En el plan':'＋ Agregar al plan'}</button><button class="detail-action ${compareIds.includes(e.id)?'primary':''}" onclick="toggleCompare('${e.id}');openDetail('${e.id}')">${compareIds.includes(e.id)?'✓ En comparación':'⇄ Comparar'}</button></div></div>`;
+ $('#detailOverlay').classList.add('open');$('#detailOverlay').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
+};
+window.closeDetail=()=>{const d=$('#detailOverlay');d.classList.remove('open');d.setAttribute('aria-hidden','true');document.body.style.overflow=''};
+window.openFilters=()=>{$('.controls').classList.add('mobile-open');document.body.style.overflow='hidden'};
+window.closeFilters=()=>{$('.controls').classList.remove('mobile-open');document.body.style.overflow=''};
+window.shareEvent=async id=>{
+ const e=byId(id),vi=videoInfo(e);
+ const data={title:e.title,text:`${e.title} · ${eventTime(e)} · ${e.venue} · Puntaje para ${familyProfile.name||'Mica'} ${personalScore(e).toFixed(1)}/5`,url:e.buy||(vi&&vi.url)||location.href};
+ try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(`${data.text}\n${data.url}`);alert('Link copiado')}}catch(_){}
+};
+window.shareApp=async()=>{
+ const data={title:'Mica Week',text:'Agenda premium de planes para chicos en CABA',url:location.href};
+ try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(location.href);alert('Link copiado')}}catch(_){}
+};
 
 window.openPhoto=id=>{
  const e=byId(id); if(!e)return;
  const img=$('#photoLarge');
- img.onerror=()=>{img.onerror=null;img.src=e.image};
+ img.dataset.id=e.id;img.dataset.i='0';img.onerror=()=>fallbackImage(img);
  img.src=visualUrl(e);
  img.alt=e.title;
  $('#photoTitle').textContent=e.title;
@@ -516,7 +882,7 @@ window.closePhoto=()=>{
 window.toggleFav=id=>{favs.has(id)?favs.delete(id):favs.add(id);localStorage.setItem('micaPremiumFavs',JSON.stringify([...favs]));render()};
 window.togglePlan=id=>{const d=plan[activeDay]||[];plan[activeDay]=d.includes(id)?d.filter(x=>x!==id):[...d,id];localStorage.setItem('micaPlan',JSON.stringify(plan));render();updatePlanCount();renderPlan()};
 window.focusEvent=id=>{const e=byId(id);activeDay=e.days.includes(activeDay)?activeDay:e.days[0];showFavs=false;activeTag='';setup();setTimeout(()=>{const el=$('#card-'+id);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.style.borderColor='var(--yellow)'}},120)};
-function updatePlanCount(){$('#planCount').textContent=Object.values(plan).flat().length}
+function updatePlanCount(){const n=Object.values(plan).flat().length;$('#planCount').textContent=n;$('#mobilePlanCount').textContent=n}
 function renderPlan(){
  const entries=days.filter(d=>(plan[d]||[]).length);
  $('#planList').innerHTML=entries.length?entries.map(d=>`<div style="margin-top:18px"><b style="font-family:var(--serif);font-size:19px">${cap(d)}</b>${plan[d].map(id=>{const e=byId(id);return e?`<div class="pitem"><b>${e.title}</b><small>${eventTime(e,d)} · ${e.venue} · ${e.cost}</small><button onclick="removePlan('${d}','${id}')">Quitar</button></div>`:''}).join('')}</div>`).join(''):'<p style="color:var(--muted)">Todavía no agregaste nada. Tocá el botón <b>+</b> en cualquier tarjeta.</p>';
@@ -524,5 +890,5 @@ function renderPlan(){
  const sum=known.reduce((a,e)=>a+(e.price||0),0),unknown=known.filter(e=>e.price===null).length;
  $('#planTotal').innerHTML=`<b>${known.length}</b> actividades · costo estimado por persona: <b>$${sum.toLocaleString('es-AR')}</b>${unknown?` <span style="color:var(--muted)">(+${unknown} a confirmar)</span>`:''}`;
 }
-setup();renderPlan();
+setup();renderPlan();loadWeather();
 </script></body></html>
